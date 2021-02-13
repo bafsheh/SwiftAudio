@@ -137,6 +137,7 @@
 		E77F3C0EEB14A6554EED9E309DE78AA9 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7E2CFB94609AE3465108A27AA0623 /* SuiteHooks.swift */; };
 		E84C1F1EB2FEFCEB63606CB9C9AA8885 /* AVPlayerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C8250BDD30941C95B3AB7E8F000A97 /* AVPlayerWrapper.swift */; };
 		EAAF67A3CE9346D087390C3B1F4E5728 /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D17586D19A27717B3EA58604BB51F81 /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		EF4E3CE925D44394006CEA0C /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E3CE825D44394006CEA0C /* ResourceLoader.swift */; };
 		F13B3CBC122B1A54C8D87DEEB715E34A /* RemoteCommandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2803A697A3541DCF709574ED441C08 /* RemoteCommandController.swift */; };
 		F1FEB6D8CDA4A8D21ECDBC76F0C60AB4 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000293523BD3B2DD6B1D37CCEEB3341A /* World+DSL.swift */; };
 		F7F74EF8E3DCC6DA3788D01B58153247 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F362317637CCA78CFFC2C2EC9A75769A /* MatcherProtocols.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -348,6 +349,7 @@
 		ED478709AD0AA82C8BCDE1D3D1394F48 /* Quick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Quick.h; path = Sources/QuickObjectiveC/Quick.h; sourceTree = "<group>"; };
 		EDE8144940E39AB93895BF39F2E9FEBC /* Pods-SwiftAudio_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftAudio_Tests-umbrella.h"; sourceTree = "<group>"; };
 		EF012F5550F97F4370D599B1BFAA9537 /* AVPlayerItemObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AVPlayerItemObserver.swift; sourceTree = "<group>"; };
+		EF4E3CE825D44394006CEA0C /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
 		F28C90B0F29365F96B473A0CC32EDE38 /* CwlBadInstructionException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlBadInstructionException.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlBadInstructionException.swift; sourceTree = "<group>"; };
 		F33715FDD3F97FA3CC06522D6289E50B /* World.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = World.swift; path = Sources/Quick/World.swift; sourceTree = "<group>"; };
 		F362317637CCA78CFFC2C2EC9A75769A /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Sources/Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
@@ -473,6 +475,7 @@
 		45E6AC134E96FAEC12BDCC6DD8A100E4 /* AudioSessionController */ = {
 			isa = PBXGroup;
 			children = (
+				EF4E3CE725D44205006CEA0C /* Caching */,
 				B0D5F02025D3BA239230538CF754424A /* AudioSession.swift */,
 				A43C7412E0E1F5210CBE87B6D86710D6 /* AudioSessionController.swift */,
 			);
@@ -744,6 +747,14 @@
 			path = "Target Support Files/Pods-SwiftAudio_Tests";
 			sourceTree = "<group>";
 		};
+		EF4E3CE725D44205006CEA0C /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E3CE825D44394006CEA0C /* ResourceLoader.swift */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
 		F0437D683210F0C85BB26FE5F9A8E056 /* RemoteCommandController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1003,6 +1014,7 @@
 				8341C9A30E36731959D8A7D866E33E95 /* MediaItemProperty.swift in Sources */,
 				952E8856293D111C3F097E5A168A9B41 /* NowPlayingInfoCenter.swift in Sources */,
 				7B3D2934A9E7D0B1375F6BDFBC170C3F /* NowPlayingInfoController.swift in Sources */,
+				EF4E3CE925D44394006CEA0C /* ResourceLoader.swift in Sources */,
 				1A8F096F13F5C7F9C3F46A0767E6963F /* NowPlayingInfoControllerProtocol.swift in Sources */,
 				C28EDA5B19FD9C8F501754BE1460A79C /* NowPlayingInfoKeyValue.swift in Sources */,
 				5F975077CC1B176BEBB879B3ABE9AEA3 /* NowPlayingInfoProperty.swift in Sources */,
